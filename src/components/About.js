@@ -21,7 +21,7 @@ const About = () => {
          whileInView={'show'}
          viewport={{once:false,amount:0.3}}
         className='flex-1  bg-contain bg-no-repeat  bg-top'>
-          <img className='' src={ja}/>
+          <img src={ja}/>
         </motion.div>
         <motion.div 
          variants={fadeIn('left',0.5)}
