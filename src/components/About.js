@@ -40,7 +40,7 @@ const About = () => {
           {/*stats*/}
           <div className='mt-6'>
             <div className='text-gradient text-[26px]'>I'm familiar with:</div>
-            <div className='flex text-[42px] m-6 justify-between '>
+            <div className='flex text-[42px] m-6 justify-between'>
               <FaReact/>
               <FaHtml5/>
               <FaCss3Alt/>
