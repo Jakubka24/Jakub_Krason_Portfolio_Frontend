@@ -7,8 +7,8 @@ import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
 
 import Img1 from '../assets/portfolio-1.png'
-import Img2 from '../assets/portfolio-img2.png'
-import Img3 from '../assets/portfolio-img3.png'
+import Img2 from '../assets/portfolio-2.png'
+import Img3 from '../assets/portfolio-3.png'
 
 
 const Work = () => {
@@ -30,13 +30,14 @@ const Work = () => {
         My lates <br/>
         Work 
           </h2>
-          <p className='max-w-sm mb-16'> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta tellus nec finibus tristique. Ut feugiat ut mauris a maximus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta tellus nec finibus tristique. Ut feugiat ut mauris a maximus.
+          <p className='max-w-m mb-16 text-[22px] text-accent-white'>
+            My latest creation is a "memory" type game called "Medieval Match," created in the beloved medieval theme that I adore.
+            Previously, I worked on a larger project titled "Music Mood," where every music fan will find something for themselves.
           </p>
-          <button className='btn btn-sm'>View all projects</button>
+          <a className="btn btn-sm p-4" href='https://github.com/Jakubka24?tab=repositories'>View all projects</a>
         </div>
         {/* image */}
-        <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+        <div  className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
           {/* overlay */}
           <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
           {/* img */}
@@ -47,7 +48,7 @@ const Work = () => {
         {/* pretitle */}
         <div
         className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-          <span className='text-gradient'>UI/UX Design</span>
+          <span className='text-gradient'>Full stack app</span>
           </div>
         {/* title */}
         <div  className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
@@ -60,7 +61,7 @@ const Work = () => {
        initial="hidden"
        whileInView={'show'}
        viewport={{once:false,amount:0.3}}   
-       className='flex-1 flex flex-col gap-y-10 lg:gap-y-28' >
+       className='flex-1 flex flex-col gap-y-10 lg:gap-y-[64px]' >
         {/* image */}
         <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
           {/* overlay */}
@@ -73,11 +74,11 @@ const Work = () => {
         {/* pretitle */}
         <div
         className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-          <span className='text-gradient'>UI/UX Design</span>
+          <span className='text-gradient'>Frontend app</span>
           </div>
         {/* title */}
         <div  className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-          <span className='text-3x1 text-white'>Project Title</span>
+          <span className='text-3x1 text-white'>Medieval Match</span>
         </div>
         </div>
         <div className='flex-1'>
@@ -93,11 +94,11 @@ const Work = () => {
         {/* pretitle */}
         <div
         className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-          <span className='text-gradient'>UI/UX Design</span>
+          <span className='text-gradient'>My first tailwind app</span>
           </div>
         {/* title */}
         <div  className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-          <span className='text-3x1 text-white'>Project Title</span>
+          <span className='text-3x1 text-white'>My portfolio</span>
         </div>
         </div>
       </div>

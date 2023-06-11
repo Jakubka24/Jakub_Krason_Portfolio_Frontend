@@ -1,10 +1,11 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
+import {useInView} from 'react-intersection-observer';
 import {motion} from "framer-motion"
-import { fadeIn } from '../variants';
+import {fadeIn} from '../variants';
 import {FaReact,FaHtml5,FaCss3Alt,FaNodeJs} from 'react-icons/fa'
 import {SiJavascript, SiMysql, SiTailwindcss, SiTypescript} from 'react-icons/si'
-import ja from '../assets/20220908_141937.jpg'
+import {Link} from 'react-scroll'
+import ja from '../assets/avatar.jpg'
 const About = () => {
   const [ref, inView] = useInView({
     threshold:0.5,
@@ -20,8 +21,8 @@ const About = () => {
          initial="hidden"
          whileInView={'show'}
          viewport={{once:false,amount:0.3}}
-        className='flex-1  bg-contain bg-no-repeat  bg-top'>
-          <img src={ja}/>
+        className=''>
+          <img className="rounded-[25px] m-l-[200px] border border-white-800 hidden lg:block" src={ja}/>
         </motion.div>
         <motion.div 
          variants={fadeIn('left',0.5)}
@@ -35,7 +36,8 @@ const About = () => {
           <h3 className='h3 mb-4'>
             I'm Freelance Front-end developer.
             </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula ex eget mi bibendum lobortis. Nulla vitae tincidunt lorem. Curabitur hendrerit eget justo vel ultricies. Morbi ut ante quis mi auctor sodales vel in augue.</p>
+          <p className="text-[14px]">As I mentioned, I started at the end of 2021 with courses on the "Udemy" platform, where I familiarized myself with the basics of HTML and CSS. The next course I took on the same platform was titled "Intermediate-Advanced Front-End Development". After that, it was time to delve into my first serious programming language - JavaScript..</p>
+          <p  className="text-[14px]">A significant and more serious step was enrolling in a 14-month back-end course with elements of full-stack development, covering technologies such as HTML, CSS, JavaScript, Node.js, TypeScript, MySQL, GIT, Scrum, and React.</p>
 
           {/*stats*/}
           <div className='mt-6'>
@@ -52,8 +54,10 @@ const About = () => {
             </div>
           </div>
           <div className='flex gap-x-8 items-center'>
-            <button className='btn btn-lg'>Contact me</button>
-            <a href='#' className='text-gradient btn-link'>
+            <Link to="contact">
+              <button className='btn btn-lg'>Contact me</button>
+            </Link>
+            <a href='https://github.com/Jakubka24' className='text-gradient btn-link'>
               My Portfolio
             </a>
           </div>
